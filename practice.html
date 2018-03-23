@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Assignment 05 - DOM Practice</title>
     <script src="js/dom-practice.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            'use strict';
+            var btn3 = $("btn3");
+            btn3.addEventListener('click', displayMessage);
+        });
+
+    </script>
 </head>
+
 <body>
-    
+    <button onclick="displayMessage()">Click Me</button>
+    <button id="btn2">Click 2nd Button</button>
+    <button id="btn3">Click 3rd Button</button>
+    <br><br>
+    <a href="http://www.google.com" id="redirect">Visit Google</a>
+    <br><br>
+    <input type="text" id='inputText'>
+    <button id="btnGo">GO</button>
+    <br><br>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+    <br><br>
+
+    <select id="selectList">
+        <option value="">Select an item</option>
+    </select>
+    <button id="selectBtn">Select</button>
+
 </body>
+
 </html>

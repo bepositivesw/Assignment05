@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Assignment 05 - Employee Management Application</title>
+    <link rel="stylesheet" href="css/employee_app.css">
     <script src="js/employee-management.js"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h2>The Employee Management Application</h2>
+
+        <form action="#" method="get" id="employee_form">
+            <h3>Add Employee</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name"> <span id="name_error">*</span><br><br>
+            <label for="title">Title:</label>
+            <input type="text" id="title"> <span id="title_error">*</span><br><br>
+            <label for="extension"> Extension:</label>
+            <input type="text" id="extension"> <span id="extension_error">*</span><br><br>
+            <input type="button" id="add" value="Add">
+            <span id="message">&nbsp;</span>
+        </form>
+
+        <table>
+            <h3>Showing <span id="counter">&nbsp;</span> Employees</h3>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>Extension</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="employees_table">
+                <tr>
+                    <td>Fred Franklin</td>
+                    <td>Accountant</td>
+                    <td>1177</td>
+                    <td><button>Belete</button></td>
+                </tr>
+                <tr>
+                    <td>Sally Smith</td>
+                    <td>Quality Assurance</td>
+                    <td>3423</td>
+                    <td><button>Belete</button>
+                </tr>
+                <tr>
+                    <td>Mark Martin</td>
+                    <td>VP Sales</td>
+                    <td>3346</td>
+                    <td><button>Belete</button>
+                </tr>
+                <tr>
+                    <td>Bob Walson</td>
+                    <td>Marketing</td>
+                    <td>3232</td>
+                    <td><button>Belete</button>
+                </tr>
+                <tr>
+                    <td>Jane Taylor</td>
+                    <td>Customer Service</td>
+                    <td>4411</td>
+                    <td><button>Belete</button>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>
